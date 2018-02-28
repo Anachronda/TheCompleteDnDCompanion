@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.anachronda.www.thecompletedndcompanion.LootMerchant">
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="293dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:checkedButton="@+id/rbLoot"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/rbLoot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/rb_loot"
+            tools:layout_editor_absoluteX="84dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <RadioButton
+            android:id="@+id/rbMerchant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/rb_Merchant" />
+
+    </RadioGroup>
+
+    <ListView
+        android:id="@+id/lvItemList"
+        android:layout_width="375dp"
+        android:layout_height="175dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <Button
+        android:id="@+id/btnNewItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:onClick="wipMessage"
+        android:text="@string/btn_new_item"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnEditItem"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lvItemList" />
+
+    <Button
+        android:id="@+id/btnEditItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:onClick="wipMessage"
+        android:text="@string/btn_edit_item"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnDeleteItem"
+        app:layout_constraintStart_toEndOf="@+id/btnNewItem"
+        app:layout_constraintTop_toBottomOf="@+id/lvItemList" />
+
+    <Button
+        android:id="@+id/btnDeleteItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:onClick="wipMessage"
+        android:text="@string/btn_delete_item"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnEditItem"
+        app:layout_constraintTop_toBottomOf="@+id/lvItemList" />
+
+    <Button
+        android:id="@+id/btnSaveList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:onClick="wipMessage"
+        android:text="@string/btn_save_list"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnLoadList"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnNewItem" />
+
+    <Button
+        android:id="@+id/btnLoadList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:onClick="wipMessage"
+        android:text="@string/btn_load_list"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnDeleteList"
+        app:layout_constraintStart_toEndOf="@+id/btnSaveList"
+        app:layout_constraintTop_toBottomOf="@+id/btnEditItem" />
+
+    <Button
+        android:id="@+id/btnDeleteList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:onClick="wipMessage"
+        android:text="@string/btn_delete_list"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnLoadList"
+        app:layout_constraintTop_toBottomOf="@+id/btnDeleteItem" />
+
+    <Button
+        android:id="@+id/btnSelectAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="wipMessage"
+        android:text="@string/btn_select_all"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSaveList" />
+
+    <Button
+        android:id="@+id/btnQuickRemove"
+        android:layout_width="72dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:onClick="wipMessage"
+        android:text="@string/btn_quick_remove"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnSelectNone"
+        app:layout_constraintStart_toEndOf="@+id/btnQuickAdd"
+        app:layout_constraintTop_toBottomOf="@+id/btnLoadList" />
+
+    <Button
+        android:id="@+id/btnQuickAdd"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="wipMessage"
+        android:text="@string/btn_quick_add"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnQuickRemove"
+        app:layout_constraintStart_toEndOf="@+id/btnSelectAll"
+        app:layout_constraintTop_toBottomOf="@+id/btnLoadList" />
+
+    <Button
+        android:id="@+id/btnSelectNone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="wipMessage"
+        android:text="@string/btn_select_none"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDeleteList" />
+
+    <Button
+        android:id="@+id/btnGenerateList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:onClick="wipMessage"
+        android:text="@string/btn_generate_list"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ListView
+        android:layout_width="395dp"
+        android:layout_height="158dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/btnGenerateList"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</android.support.constraint.ConstraintLayout>

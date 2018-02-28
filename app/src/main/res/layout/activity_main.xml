@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.anachronda.www.thecompletedndcompanion.MainActivity">
+
+    <ListView
+        android:id="@+id/characterList"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="11dp"
+        android:layout_marginTop="11dp"
+        android:background="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/btnDice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLoadSpell" />
+
+    <ListView
+        android:id="@+id/spellBook"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="110dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSection2" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="12dp"
+        android:background="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/tvSection2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLoadCharacter" />
+
+    <Button
+        android:id="@+id/btnLoadCharacter"
+        android:layout_width="86dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="8dp"
+        android:onClick="characterManager"
+        android:text="@string/char_load_button"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnNewCharacter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/characterList"
+        android:layout_marginLeft="8dp" />
+
+    <Button
+        android:id="@+id/btnNewCharacter"
+        android:layout_width="86dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:onClick="characterManager"
+        android:text="@string/char_new_button"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/characterList" />
+
+    <Button
+        android:id="@+id/btnDeleteCharacter"
+        android:layout_width="86dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:onClick="deleteCharacter"
+        android:text="@string/char_delete_button"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnNewCharacter"
+        app:layout_constraintTop_toBottomOf="@+id/characterList" />
+
+    <Button
+        android:id="@+id/btnLoadSpell"
+        android:layout_width="86dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:onClick="spellbookManager"
+        android:text="@string/spell_load_button"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnNewSpell"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spellBook" />
+
+    <Button
+        android:id="@+id/btnNewSpell"
+        android:layout_width="86dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:onClick="spellbookManager"
+        android:text="@string/spell_new_button"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spellBook" />
+
+    <Button
+        android:id="@+id/btnDeleteSpell"
+        android:layout_width="86dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:onClick="deleteSpellbook"
+        android:text="@string/spell_delete_button"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnNewSpell"
+        app:layout_constraintTop_toBottomOf="@+id/spellBook" />
+
+    <TextView
+        android:id="@+id/tvSection1"
+        android:layout_width="wrap_content"
+        android:layout_height="32sp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/character_manager"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:typeface="serif"
+        app:layout_constraintBottom_toTopOf="@+id/characterList"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/recent"
+        app:layout_constraintBottom_toTopOf="@+id/characterList"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="8dp" />
+
+    <TextView
+        android:id="@+id/tvSection2"
+        android:layout_width="wrap_content"
+        android:layout_height="32sp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/spellbook_skillset"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:typeface="serif"
+        app:layout_constraintBottom_toTopOf="@+id/spellBook"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLoadCharacter" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/recent"
+        app:layout_constraintBottom_toTopOf="@+id/spellBook"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="16dp" />
+
+    <Button
+        android:id="@+id/btnDice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:onClick="diceTool"
+        android:text="@string/dice"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnLootMerchant"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <Button
+        android:id="@+id/btnLootMerchant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="16dp"
+        android:onClick="lootMerchant"
+        android:text="@string/loot_merchant"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        android:layout_marginRight="32dp" />
+</android.support.constraint.ConstraintLayout>
