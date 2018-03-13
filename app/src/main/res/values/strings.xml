@@ -71,4 +71,67 @@
     <string name="btn_quick_remove">Remove</string>
     <string name="btn_quick_add">Add</string>
     <string name="btn_generate_list">Generate</string>
+    <string name="new_char_name">Name:</string>
+    <string name="new_char_class">Class:</string>
+    <string name="new_char_race">Race:</string>
+    <string name="new_char_background">Background:</string>
+    <string name="new_char_alignment">Alignment:</string>
+    <string-array name="class_array">
+        <item>Barbarian</item>
+        <item>Bard</item>
+        <item>Cleric</item>
+        <item>Druid</item>
+        <item>Fighter</item>
+        <item>Monk</item>
+        <item>Paladin</item>
+        <item>Ranger</item>
+        <item>Rogue</item>
+        <item>Sorcerer</item>
+        <item>Warlock</item>
+        <item>Wizard</item>
+    </string-array>
+    <string-array name="align_array">
+        <item>Lawful Good</item>
+        <item>Neutral Good</item>
+        <item>Chaotic Good</item>
+        <item>Lawful Neutral</item>
+        <item>True Neutral</item>
+        <item>Chaotic Neutral</item>
+        <item>Lawful Evil</item>
+        <item>Neutral Evil</item>
+        <item>Chaotic Evil</item>
+    </string-array>
+    <string-array name="bg_array">
+        <item>Acolyte</item>
+        <item>Charlatan</item>
+        <item>Criminal</item>
+        <item>Entertainer</item>
+        <item>Folk Hero</item>
+        <item>Gladiator</item>
+        <item>Guild Artisan</item>
+        <item>Guild Merchant</item>
+        <item>Hermit</item>
+        <item>Knight</item>
+        <item>Noble</item>
+        <item>Outlander</item>
+        <item>Pirate</item>
+        <item>Sage</item>
+        <item>Sailor</item>
+        <item>Soldier</item>
+        <item>Spy</item>
+        <item>Urchin</item>
+    </string-array>
+    <string-array name="race_array">
+        <item>Dragonborn</item>
+        <item>Dwarf</item>
+        <item>Elf</item>
+        <item>Gnome</item>
+        <item>Half-Elf</item>
+        <item>Half-Orc</item>
+        <item>Halfling</item>
+        <item>Human</item>
+        <item>Tiefling</item>
+    </string-array>
+    <string name="btn_save">Save</string>
+    <string name="btn_cancel">Cancel</string>
 </resources>

@@ -76,6 +76,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void newCharacter(View view) {
+        Intent intent = new Intent(this, NewCharacter.class);
+        startActivity(intent);
+    }
+
     public void deleteCharacter(View view){
         Context context = getApplicationContext();
         CharSequence text = "Character deleted!";

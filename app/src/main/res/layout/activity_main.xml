@@ -73,7 +73,7 @@
         android:layout_height="32dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:onClick="characterManager"
+        android:onClick="newCharacter"
         android:text="@string/char_new_button"
         android:textSize="10sp"
         app:layout_constraintEnd_toEndOf="parent"
