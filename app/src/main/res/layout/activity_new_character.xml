@@ -47,7 +47,6 @@
         android:layout_height="25dp"
         android:layout_marginEnd="32dp"
         android:layout_marginTop="8dp"
-        android:entries="@array/class_array"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtCharName"
         android:layout_marginRight="32dp" />
@@ -69,7 +68,6 @@
         android:layout_height="25dp"
         android:layout_marginEnd="32dp"
         android:layout_marginTop="8dp"
-        android:entries="@array/race_array"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ddlClass"
         android:layout_marginRight="32dp" />
@@ -91,7 +89,6 @@
         android:layout_height="25dp"
         android:layout_marginEnd="32dp"
         android:layout_marginTop="8dp"
-        android:entries="@array/bg_array"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ddlRace"
         android:layout_marginRight="32dp" />
@@ -108,7 +105,7 @@
         app:layout_constraintTop_toBottomOf="@+id/ddlBackground">
 
         <TextView
-            android:id="@+id/textView9"
+            android:id="@+id/txtCharHP"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
@@ -150,12 +147,13 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/textView27"
+            android:id="@+id/txtCharCha"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="2dp"
+            android:onClick="editCha"
             android:text="@string/char_cha"
             android:textColor="@android:color/black"
             android:textSize="30sp"
@@ -190,12 +188,13 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/textView22"
+            android:id="@+id/txtCharStr"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="2dp"
+            android:onClick="editStr"
             android:text="@string/char_str"
             android:textColor="@android:color/black"
             android:textSize="30sp"
@@ -230,12 +229,13 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/textView25"
+            android:id="@+id/txtCharWis"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="2dp"
+            android:onClick="editWis"
             android:text="@string/char_wis"
             android:textColor="@android:color/black"
             android:textSize="30sp"
@@ -270,12 +270,13 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/textView23"
+            android:id="@+id/txtCharInt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="2dp"
+            android:onClick="editInt"
             android:text="@string/char_int"
             android:textColor="@android:color/black"
             android:textSize="30sp"
@@ -310,12 +311,13 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/textView26"
+            android:id="@+id/txtCharCon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="2dp"
+            android:onClick="editCon"
             android:text="@string/char_con"
             android:textColor="@android:color/black"
             android:textSize="30sp"
@@ -350,12 +352,13 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/textView24"
+            android:id="@+id/txtCharDex"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="2dp"
+            android:onClick="editDex"
             android:text="@string/char_dex"
             android:textColor="@android:color/black"
             android:textSize="30sp"

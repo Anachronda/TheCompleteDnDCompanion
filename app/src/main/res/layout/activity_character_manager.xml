@@ -206,7 +206,7 @@
         android:background="?android:attr/colorBackgroundFloating"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent" tools:targetApi="m">
 
         <android.support.constraint.ConstraintLayout
             android:layout_width="90dp"
@@ -216,7 +216,8 @@
             android:background="@android:color/white"
             android:onClick="rollDice"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="50dp">
 
             <TextView
                 android:id="@+id/textView16"
@@ -281,7 +282,8 @@
             android:onClick="rollDice"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="50dp">
 
             <TextView
                 android:id="@+id/textView18"
@@ -344,7 +346,8 @@
             android:background="@android:color/white"
             android:onClick="rollDice"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent">
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginRight="50dp">
 
             <TextView
                 android:id="@+id/textView21"
@@ -407,7 +410,8 @@
             android:background="@android:color/white"
             android:onClick="rollDice"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginRight="50dp">
 
             <TextView
                 android:id="@+id/textView17"
@@ -470,7 +474,8 @@
             android:background="@android:color/white"
             android:onClick="rollDice"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent">
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="50dp">
 
             <TextView
                 android:id="@+id/textView20"
@@ -535,7 +540,8 @@
             android:onClick="rollDice"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginRight="50dp">
 
             <TextView
                 android:id="@+id/textView19"

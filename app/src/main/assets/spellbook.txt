@@ -1,3 +1,3 @@
-Name, Lv 0 Class
-Name, Lv 0 Class
-Name, Lv 0 Class
+Name, Lv 0 com.anachronda.www.thecompletedndcompanion.Class
+Name, Lv 0 com.anachronda.www.thecompletedndcompanion.Class
+Name, Lv 0 com.anachronda.www.thecompletedndcompanion.Class
