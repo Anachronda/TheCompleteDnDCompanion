@@ -31,6 +31,9 @@ public class Character extends Model {
     @Column(name = "HP")
     public int hp;
 
+    @Column(name = "HitDice")
+    public String hitDice;
+
     @Column(name = "SpellSlots")
     public int slots;
 
@@ -59,7 +62,7 @@ public class Character extends Model {
         super();
     }
 
-    public Character(int id, String name, int level, Class charClass, Race race, Background bg, int hp, int slots, int str,
+    public Character(int id, String name, int level, Class charClass, Race race, Background bg, int hp, String hitDice, int slots, int str,
                      int dex, int con, int intel, int wis, int cha, String equip) {
         super();
         this.id = id;
@@ -69,6 +72,7 @@ public class Character extends Model {
         this.race = race;
         this.bg = bg;
         this.hp = hp;
+        this.hitDice = hitDice;
         this.slots = slots;
         this.str = str;
         this.dex = dex;

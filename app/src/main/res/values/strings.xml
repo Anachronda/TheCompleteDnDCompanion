@@ -76,6 +76,7 @@
     <string name="new_char_race">Race:</string>
     <string name="new_char_background">Background:</string>
     <string name="new_char_alignment">Alignment:</string>
+    <string name="btnClear">Clear</string>
     <string-array name="class_array">
         <item>Barbarian</item>
         <item>Bard</item>

@@ -45,6 +45,7 @@ public class CharacterManager extends AppCompatActivity {
         String className = characters.get(0).charClass.name;
         String race = characters.get(0).race.name;
         String bg = characters.get(0).bg.name;
+        String hd = characters.get(0).hitDice;
         int hp = characters.get(0).hp;
         int str = characters.get(0).str;
         int dex = characters.get(0).dex;
@@ -53,13 +54,16 @@ public class CharacterManager extends AppCompatActivity {
         int cha = characters.get(0).cha;
         int wis = characters.get(0).wis;
         int ac = 10 + (int)Math.ceil((dex - 10) / 2);
+        int init = (int)Math.ceil((dex - 10) / 2);
 
         charName.setText("Name: " + name);
         charClass.setText("Class: Level " + level + " " + className);
         charRace.setText("Race: " + race);
         charBg.setText("Background: " + bg);
+        charHitDice.setText("Hit Dice: " + hd);
         charHP.setText(hp + " HP");
         charAC.setText(ac + " AC");
+        charInit.setText("Initiative: " + init);
         charStr.setText(""+str);
         charDex.setText(""+dex);
         charCon.setText(""+con);

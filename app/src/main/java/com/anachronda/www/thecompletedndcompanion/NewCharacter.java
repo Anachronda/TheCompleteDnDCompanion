@@ -1,5 +1,6 @@
 package com.anachronda.www.thecompletedndcompanion;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -367,6 +368,7 @@ public class NewCharacter extends AppCompatActivity {
             thisCharacter.race = thisRace.get(0);
             thisCharacter.bg = thisBg.get(0);
             thisCharacter.hp = (thisClass.get(0).health + ((int)Math.ceil((con - 10) / 2)));
+            thisCharacter.hitDice = (thisClass.get(0).hitDice);
             thisCharacter.slots = 0;
             thisCharacter.str = str;
             thisCharacter.dex = dex;
@@ -383,8 +385,11 @@ public class NewCharacter extends AppCompatActivity {
 
             Toast.makeText(context, text, duration).show();
 
-            Intent intent = new Intent(this, MainActivity.class);
-            startActivity(intent);
+            Intent intent = new Intent();
+            intent.putExtra("ID", charID);
+            setResult(Activity.RESULT_OK, intent);
+
+            this.finish();
         } catch (Exception e) {
             Context context = getApplicationContext();
             CharSequence text = "Something went wrong!";
@@ -395,7 +400,7 @@ public class NewCharacter extends AppCompatActivity {
     }
 
     public void cancelCharacter(View view){
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
+        Intent intent = new Intent();
+        setResult(Activity.RESULT_CANCELED, intent);
     }
 }

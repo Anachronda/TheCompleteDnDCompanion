@@ -7,46 +7,31 @@
     tools:context="com.anachronda.www.thecompletedndcompanion.DiceTool">
 
     <android.support.constraint.ConstraintLayout
-        android:id="@+id/constraintLayout3"
-        android:layout_width="375dp"
-        android:layout_height="44dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:background="@android:color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:text="@string/selected_char"
-            android:textColor="@android:color/black"
-            android:textSize="24sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-    </android.support.constraint.ConstraintLayout>
-
-    <android.support.constraint.ConstraintLayout
         android:id="@+id/constraintLayout2"
         android:layout_width="375dp"
         android:layout_height="153dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="11dp"
         android:background="@android:color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
+        app:layout_constraintTop_toBottomOf="@+id/ddlCharacters">
 
+        <TextView
+            android:id="@+id/txtDice"
+            android:layout_width="334dp"
+            android:layout_height="116dp"
+            android:layout_marginBottom="19dp"
+            android:layout_marginEnd="14dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
     </android.support.constraint.ConstraintLayout>
 
     <android.support.constraint.ConstraintLayout
@@ -74,7 +59,9 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/btnDex"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginRight="6dp"
+            android:layout_marginLeft="8dp" />
 
         <Button
             android:id="@+id/btnDex"
@@ -143,21 +130,23 @@
             android:text="@string/btn_cha"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginRight="8dp" />
     </android.support.constraint.ConstraintLayout>
 
     <Button
         android:id="@+id/btnCoin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="35dp"
         android:layout_marginStart="80dp"
-        android:layout_marginTop="8dp"
-        android:onClick="diceRoll"
+        android:layout_marginTop="4dp"
+        android:onClick="flipCoin"
         android:text="@string/btn_coin"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnD4" />
+        app:layout_constraintTop_toBottomOf="@+id/btnD4"
+        android:layout_marginLeft="80dp" />
 
     <Button
         android:id="@+id/btnD4"
@@ -165,12 +154,13 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginStart="80dp"
-        android:layout_marginTop="8dp"
-        android:onClick="diceRoll"
+        android:layout_marginTop="4dp"
+        android:onClick="rolld4"
         android:text="@string/btn_d4"
         app:layout_constraintBottom_toTopOf="@+id/btnCoin"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnD6" />
+        app:layout_constraintTop_toBottomOf="@+id/btnD6"
+        android:layout_marginLeft="80dp" />
 
     <Button
         android:id="@+id/btnD6"
@@ -178,25 +168,27 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginStart="80dp"
-        android:layout_marginTop="8dp"
-        android:onClick="diceRoll"
+        android:layout_marginTop="4dp"
+        android:onClick="rolld6"
         android:text="@string/btn_d6"
         app:layout_constraintBottom_toTopOf="@+id/btnD4"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnD20" />
+        app:layout_constraintTop_toBottomOf="@+id/btnD20"
+        android:layout_marginLeft="80dp" />
 
     <Button
         android:id="@+id/btnD8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="35dp"
         android:layout_marginEnd="80dp"
-        android:layout_marginTop="8dp"
-        android:onClick="diceRoll"
+        android:layout_marginTop="4dp"
+        android:onClick="rolld8"
         android:text="@string/btn_d8"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnD10" />
+        app:layout_constraintTop_toBottomOf="@+id/btnD10"
+        android:layout_marginRight="80dp" />
 
     <Button
         android:id="@+id/btnD10"
@@ -204,12 +196,13 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="80dp"
-        android:layout_marginTop="8dp"
-        android:onClick="diceRoll"
+        android:layout_marginTop="4dp"
+        android:onClick="rolld10"
         android:text="@string/btn_d10"
         app:layout_constraintBottom_toTopOf="@+id/btnD8"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnD12" />
+        app:layout_constraintTop_toBottomOf="@+id/btnD12"
+        android:layout_marginRight="80dp" />
 
     <Button
         android:id="@+id/btnD12"
@@ -217,32 +210,66 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="80dp"
-        android:layout_marginTop="8dp"
-        android:onClick="diceRoll"
+        android:layout_marginTop="4dp"
+        android:onClick="rolld12"
         android:text="@string/btn_d12"
         app:layout_constraintBottom_toTopOf="@+id/btnD10"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnD100" />
+        app:layout_constraintTop_toBottomOf="@+id/btnD100"
+        android:layout_marginRight="80dp" />
 
     <Button
         android:id="@+id/btnD20"
         android:layout_width="100dp"
         android:layout_height="75dp"
         android:layout_marginStart="80dp"
-        android:layout_marginTop="25dp"
-        android:onClick="diceRoll"
+        android:layout_marginTop="12dp"
+        android:onClick="rolld20"
         android:text="@string/btn_d20"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout4" />
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout4"
+        android:layout_marginLeft="80dp" />
 
     <Button
         android:id="@+id/btnD100"
         android:layout_width="100dp"
         android:layout_height="75dp"
         android:layout_marginEnd="80dp"
-        android:layout_marginTop="25dp"
-        android:onClick="diceRoll"
+        android:layout_marginTop="12dp"
+        android:onClick="rolld100"
         android:text="@string/btn_d100"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout4" />
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout4"
+        android:layout_marginRight="80dp" />
+
+    <Spinner
+        android:id="@+id/ddlCharacters"
+        android:layout_width="375dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/background_light"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:onClick="clearDice"
+        android:text="@string/btnClear"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </android.support.constraint.ConstraintLayout>

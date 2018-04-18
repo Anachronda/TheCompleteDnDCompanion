@@ -13,7 +13,6 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:background="@android:color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -27,7 +26,8 @@
         android:onClick="btnClick"
         android:text="@string/btn_add_skill"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lvSkillset" />
+        app:layout_constraintTop_toBottomOf="@+id/lvSkillset"
+        android:layout_marginLeft="32dp" />
 
     <Button
         android:id="@+id/btnDeleteSkill"
@@ -51,31 +51,22 @@
         android:onClick="btnClick"
         android:text="@string/btn_load_skillset"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lvSkillset" />
+        app:layout_constraintTop_toBottomOf="@+id/lvSkillset"
+        android:layout_marginRight="32dp" />
 
-    <android.support.constraint.ConstraintLayout
-        android:layout_width="375dp"
+    <ListView
+        android:id="@+id/lvSpellbook"
+        android:layout_width="395dp"
         android:layout_height="323dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:background="@android:color/white"
+        android:layout_marginTop="7dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAddSkill" />
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="299dp"
-            android:layout_height="143dp"
-            android:layout_marginBottom="8dp"
-            android:layout_marginTop="8dp"
-            android:text="@string/txt_placeholder"
-            android:textColor="@android:color/black"
-            android:textSize="24sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-    </android.support.constraint.ConstraintLayout>
 </android.support.constraint.ConstraintLayout>
