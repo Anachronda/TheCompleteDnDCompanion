@@ -135,4 +135,58 @@
     </string-array>
     <string name="btn_save">Save</string>
     <string name="btn_cancel">Cancel</string>
+    <string-array name="rarity_array">
+        <item>Common</item>
+        <item>Uncommon</item>
+        <item>Rare</item>
+        <item>Very Rare</item>
+        <item>Legendary</item>
+        <item>Artifact</item>
+    </string-array>
+    <string name="lblItemName">Item Name:</string>
+    <string-array name="type_array">
+        <item>Adventuring Gear</item>
+        <item>Ammunition</item>
+        <item>Armor</item>
+        <item>Clothing</item>
+        <item>Equipment Pack</item>
+        <item>Exotic Melee</item>
+        <item>Exotic Ranged</item>
+        <item>Focus</item>
+        <item>Heavy Armor</item>
+        <item>Holy Symbol</item>
+        <item>Light Armor</item>
+        <item>Martial Melee</item>
+        <item>Martial Ranged</item>
+        <item>Medium Armor</item>
+        <item>Mount</item>
+        <item>Poison</item>
+        <item>Potion</item>
+        <item>Ring</item>
+        <item>Rod</item>
+        <item>Scroll</item>
+        <item>Shield</item>
+        <item>Simple Melee</item>
+        <item>Simple Ranged</item>
+        <item>Staff</item>
+        <item>Tool</item>
+        <item>Vehicle</item>
+        <item>Wand</item>
+        <item>Weapon</item>
+        <item>Wondrous Item</item>
+    </string-array>
+    <string name="item_type">Type:</string>
+    <string name="item_cost">Cost:</string>
+    <string name="cost_placeholder">0 gp</string>
+    <string name="item_weight">Weight:</string>
+    <string name="weight_placeholder">0 lb</string>
+    <string name="item_attribute">Attributes:</string>
+    <string name="attribute_placeholder">(AC, Damage Type, etc)</string>
+    <string name="item_notes">Notes:</string>
+    <string name="notes_placeholder">(Combat, Utility, etc)</string>
+    <string name="item_description">Description:</string>
+    <string name="description_placeholder"></string>
+    <string name="item_attunement">Requires Attunement</string>
+    <string name="item_consumable">Consumable</string>
+    <string name="item_rarity">Rarity</string>
 </resources>

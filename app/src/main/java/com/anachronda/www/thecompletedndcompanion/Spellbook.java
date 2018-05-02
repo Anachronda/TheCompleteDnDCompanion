@@ -12,4 +12,14 @@ public class Spellbook extends Model {
     @Column(name = "CharacterID", index = true)
     public int charid;
 
+    @Column(name = "Name")
+    public String name;
+
+    @Column(name = "Spells")
+    public String list;
+
+    @Column(name = "SpellSlots")
+    public String slots;
+
+
 }

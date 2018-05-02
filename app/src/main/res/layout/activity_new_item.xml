@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewItem">
+
+    <EditText
+        android:id="@+id/txtItemName"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="text|textCapWords"
+        android:text="@string/loot_entry1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="112dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/lblItemName"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/txtItemName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="41dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="41dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="14dp"
+        android:text="@string/item_type"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/ddlType"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Spinner
+        android:id="@+id/ddlType"
+        android:layout_width="240dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="14dp"
+        android:entries="@array/type_array"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtItemName" />
+
+    <EditText
+        android:id="@+id/txtCost"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="37dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="37dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="19dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="@string/cost_placeholder"
+        app:layout_constraintEnd_toStartOf="@+id/textView8"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/ddlType" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="37dp"
+        android:text="@string/item_cost"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/txtCost"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="37dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/item_weight"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/txtWeight"
+        app:layout_constraintStart_toEndOf="@+id/txtCost"
+        app:layout_constraintTop_toBottomOf="@+id/ddlType" />
+
+    <EditText
+        android:id="@+id/txtWeight"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="19dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="@string/weight_placeholder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ddlType" />
+
+    <EditText
+        android:id="@+id/txtAttributes"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="19dp"
+        android:ems="10"
+        android:inputType="text|textCapWords"
+        android:text="@string/attribute_placeholder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/txtCost" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/item_attribute"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/txtAttributes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCost" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="62dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="34dp"
+        android:text="@string/item_notes"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/txtNotes"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <EditText
+        android:id="@+id/txtNotes"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="41dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="11dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/notes_placeholder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView22"
+        app:layout_constraintTop_toBottomOf="@+id/txtAttributes" />
+
+    <EditText
+        android:id="@+id/txtDescription"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:text="@string/description_placeholder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView23"
+        app:layout_constraintTop_toBottomOf="@+id/txtNotes" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="35dp"
+        android:text="@string/item_description"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/txtDescription"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="84dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="43dp"
+        android:text="@string/item_rarity"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/ddlRarity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+    <Spinner
+        android:id="@+id/ddlRarity"
+        android:layout_width="240dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="22dp"
+        android:entries="@array/rarity_array"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView26"
+        app:layout_constraintTop_toBottomOf="@+id/txtDescription" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="17dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginLeft="114dp"
+        android:layout_marginRight="21dp"
+        android:layout_marginStart="114dp"
+        android:layout_marginTop="50dp"
+        android:onClick="saveItem"
+        android:text="@string/btn_save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnCancel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbAttunement" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="17dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="50dp"
+        android:onClick="cancelItem"
+        android:text="@string/btn_cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnSave"
+        app:layout_constraintTop_toBottomOf="@+id/cbConsumable" />
+
+    <CheckBox
+        android:id="@+id/cbAttunement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="37dp"
+        android:text="@string/item_attunement"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/cbConsumable"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ddlRarity" />
+
+    <CheckBox
+        android:id="@+id/cbConsumable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="37dp"
+        android:text="@string/item_consumable"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cbAttunement"
+        app:layout_constraintTop_toBottomOf="@+id/ddlRarity" />
+</android.support.constraint.ConstraintLayout>
